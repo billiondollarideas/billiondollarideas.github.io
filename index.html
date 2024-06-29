@@ -132,8 +132,15 @@ body {
     "A personalized vitamin subscription service called Care/of which delivers customized vitamins."
 ];
 
+        let lastIndex = -1;
+
         function getRandomText() {
-            return texts[Math.floor(Math.random() * texts.length)];
+            let randomIndex = Math.floor(Math.random() * texts.length);
+            if (randomIndex === lastIndex) {
+                randomIndex = (randomIndex + 1) % texts.length;
+            }
+            lastIndex = randomIndex;
+            return texts[randomIndex];
         }
 
         function getRandomColor() {
