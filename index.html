@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B1ll10n D0llar Idea5</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-align: center;
+        }
+        #randomText {
+            font-size: 5em;
+            padding: 20px;
+            max-width: 80%;
+            word-wrap: break-word;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="randomText">Click anywhere to change the text and background color!</div>
+    <script>const texts = [
+    "A social network called Facebook which uses people's real names.",
+    "A streaming site called Netflix which streams movies and TV shows.",
+    "A box with heating elements which toasts bread.",
+    "An open-source electronics platform based on easy-to-use hardware and software called Arduino.",
+    "A search engine called Google which indexes the web and ranks pages based on relevance.",
+    "An online marketplace called Amazon where users can buy and sell goods.",
+    "A ride-sharing app called Uber which connects passengers with drivers.",
+    "A photo-sharing app called Instagram where users can share images and videos.",
+    "A smartphone with a touchscreen interface called the iPhone.",
+    "A computer operating system called Windows with a graphical user interface.",
+    "An email service called Gmail with large storage capacity and search capabilities.",
+    "A video-sharing platform called YouTube where users can upload and watch videos.",
+    "An online payment system called PayPal which allows users to send and receive money.",
+    "A music streaming service called Spotify where users can listen to music on-demand.",
+    "A productivity suite called Microsoft Office which includes Word, Excel, and PowerPoint.",
+    "A wireless speaker system called Sonos which streams music from various sources.",
+    "A fitness tracker called Fitbit which monitors physical activity and health metrics.",
+    "A cloud storage service called Dropbox which allows users to store and share files online.",
+    "A smart home assistant called Amazon Echo which responds to voice commands.",
+    "A professional networking site called LinkedIn where users can connect with colleagues.",
+    "An e-reader called Kindle which allows users to read digital books.",
+    "A content management system called WordPress which allows users to create and manage websites.",
+    "An online travel booking site called Expedia which offers flights, hotels, and car rentals.",
+    "A real-time messaging app called WhatsApp which allows users to send texts, voice messages, and images.",
+    "An online learning platform called Coursera which offers courses from top universities.",
+    "A dating app called Tinder which matches users based on mutual interest.",
+    "A ride-hailing app called Lyft which provides transportation services.",
+    "An online classified ads site called Craigslist where users can buy and sell items locally.",
+    "A blogging platform called Medium where users can publish and share articles.",
+    "A cloud computing service called AWS (Amazon Web Services) which offers various IT infrastructure services.",
+    "A task management app called Trello which helps users organize and prioritize tasks.",
+    "A project management tool called Asana which facilitates team collaboration and project tracking.",
+    "A social bookmarking site called Pinterest where users can save and share images and ideas.",
+    "A streaming service called Hulu which offers TV shows and movies on-demand.",
+    "A fitness app called Peloton which offers live and on-demand workout classes.",
+    "A language learning app called Duolingo which provides interactive lessons in various languages.",
+    "A photo editing software called Photoshop which allows users to manipulate and enhance images.",
+    "An online video conferencing tool called Zoom which enables virtual meetings.",
+    "A news aggregator app called Flipboard which curates news articles based on user interests.",
+    "A music identification app called Shazam which identifies songs based on audio samples.",
+    "An online survey tool called SurveyMonkey which allows users to create and distribute surveys.",
+    "A personal finance app called Mint which helps users manage their budgets and expenses.",
+    "A job search site called Indeed where users can search for job listings.",
+    "A collaborative coding platform called GitHub where developers can share and collaborate on code.",
+    "A social media platform called Twitter where users can post short messages called tweets.",
+    "A real estate marketplace called Zillow which provides information about homes for sale and rent.",
+    "A crowdfunding platform called Kickstarter where users can fund creative projects.",
+    "A short-form video app called TikTok where users can create and share 15-second videos.",
+    "A home rental service called Airbnb which allows users to rent out their homes to travelers.",
+    "A graphic design tool called Canva which enables users to create visual content.",
+    "An e-commerce platform called Shopify which allows users to create online stores.",
+    "A file-sharing service called Google Drive which offers cloud storage and document collaboration.",
+    "An online investment platform called Robinhood which offers commission-free trading.",
+    "A social networking site called Reddit where users can share and discuss content.",
+    "A virtual reality headset called Oculus Rift which provides immersive VR experiences.",
+    "An online grocery delivery service called Instacart which delivers groceries from local stores.",
+    "A travel fare aggregator called Kayak which searches for flights, hotels, and car rentals.",
+    "A photo book creation service called Shutterfly which allows users to create custom photo albums.",
+    "A home security system called Ring which includes video doorbells and security cameras.",
+    "A mobile wallet called Apple Pay which allows users to make payments with their smartphones.",
+    "A ride-sharing app called Didi which operates in China.",
+    "A social media platform called Snapchat where users can send disappearing messages.",
+    "A subscription box service called Birchbox which delivers beauty products to subscribers.",
+    "A DNA testing service called 23andMe which provides genetic information to users.",
+    "A digital notetaking app called Evernote which allows users to organize notes and tasks.",
+    "An online tutoring platform called Chegg which connects students with tutors.",
+    "A language learning platform called Rosetta Stone which offers language courses.",
+    "A podcast streaming service called Stitcher which offers a variety of podcasts.",
+    "A book subscription service called Audible which provides audiobooks.",
+    "A home exercise bike called Peloton which offers live and on-demand fitness classes.",
+    "A car rental service called Turo which allows users to rent out their cars.",
+    "An event ticketing platform called Eventbrite which allows users to create and find events.",
+    "A luxury fashion rental service called Rent the Runway which offers designer clothing for rent.",
+    "A meal kit delivery service called Blue Apron which provides ingredients and recipes for home-cooked meals.",
+    "A travel guide app called TripAdvisor which offers reviews and recommendations for travelers.",
+    "A password manager called LastPass which securely stores and manages passwords.",
+    "A freelance marketplace called Upwork which connects freelancers with clients.",
+    "A video game streaming service called Twitch where users can watch and broadcast live gameplay.",
+    "An online mattress retailer called Casper which sells mattresses directly to consumers.",
+    "A smart thermostat called Nest which learns users' temperature preferences and adjusts accordingly.",
+    "A job-oriented social network called Glassdoor which provides company reviews and salary information.",
+    "A business communication platform called Slack which offers real-time messaging and collaboration tools.",
+    "A remote access software called TeamViewer which allows users to control computers remotely.",
+    "A website builder called Wix which allows users to create websites with drag-and-drop tools.",
+    "A video doorbell called Ring which lets users see and talk to visitors remotely.",
+    "A financial services app called Square which offers payment processing and business tools.",
+    "An email marketing service called Mailchimp which helps businesses create and send email campaigns.",
+    "A domain registration service called GoDaddy which offers domain names and web hosting.",
+    "A crowd-sourced review site called Yelp where users can review local businesses.",
+    "A fitness app called MyFitnessPal which tracks diet and exercise.",
+    "A cooking video channel called Tasty which offers recipe videos.",
+    "A home organization and storage retailer called The Container Store.",
+    "A travel planning app called TripIt which organizes travel itineraries.",
+    "A professional photography sharing site called 500px where photographers can showcase their work.",
+    "A social networking site called MySpace which allows users to create profiles and connect with friends.",
+    "An online fashion retailer called ASOS which offers clothing and accessories.",
+    "A language exchange platform called Tandem which connects users for language practice.",
+    "A travel experience booking platform called Viator which offers tours and activities.",
+    "A subscription-based clothing rental service called Le Tote.",
+    "An on-demand food delivery service called DoorDash.",
+    "A personalized vitamin subscription service called Care/of which delivers customized vitamins."
+];
+
+        function getRandomText() {
+            return texts[Math.floor(Math.random() * texts.length)];
+        }
+
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function updateContent() {
+            document.getElementById('randomText').innerText = getRandomText();
+            document.body.style.backgroundColor = getRandomColor();
+        }
+
+        updateContent();
+        document.addEventListener('click', updateContent);
+    </script>
+</body>
+</html>
